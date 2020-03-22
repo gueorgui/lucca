@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Gueorgui Tcherednitchenko']
   spec.email         = ['gt@gueorgui.net']
 
-  spec.summary       = %q{A modular CLI time tracking tool}
-  spec.description   = %q{A modular CLI time tracking tool}
+  spec.summary       = 'A modular CLI time tracking tool'
+  spec.description   = 'A modular CLI time tracking tool'
   spec.homepage      = 'https://github.com/gueorgui/lucca'
   spec.license       = 'MIT'
 
@@ -20,7 +20,8 @@ Gem::Specification.new do |spec|
   spec.metadata['changelog_uri'] = spec.homepage + '/blob/master/CHANGELOG.md'
 
   # Specify which files should be added to the gem when it is released.
-  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
+  # The `git ls-files -z` loads the files in the RubyGem that have been added
+  # into git.
   spec.files         = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject do |f|
       f.match(%r{^(test|spec|features|images)/})

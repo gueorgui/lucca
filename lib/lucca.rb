@@ -1,6 +1,11 @@
-require "lucca/version"
+# frozen_string_literal: true
+
+require 'thor'
+require 'thor/version'
 
 module Lucca
   class Error < StandardError; end
-  # Your code goes here...
 end
+
+require 'lucca/cli'
+require 'lucca/version'
